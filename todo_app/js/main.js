@@ -9,6 +9,7 @@ var app = new Vue({
       if (this.newItem == '') return;
       var todo = {
         item: this.newItem,
+        isDone: false,
       };
       this.todos.push(todo);
       this.newItem = '';

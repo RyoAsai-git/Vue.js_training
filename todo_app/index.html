@@ -13,8 +13,11 @@
       </form>
       <ul>
         <li v-for="todo in todos">
-          <span>{{ todo.item }}</span>
+          <input type="checkbox" v-model="todo.isDone">
+          <span v-bind:class="{ done: todo.isDone }">{{ todo.item }}</span> 
+          <!-- 動的なスタイル適用 -->
         </li>
+        <pre>{{ $data }}</pre>
       </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
