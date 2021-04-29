@@ -1,3 +1,3 @@
-new Vue = ({
-  
+var app = new Vue({
+
 })
