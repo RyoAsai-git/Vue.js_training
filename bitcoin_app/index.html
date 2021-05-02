@@ -5,11 +5,16 @@
   <body>
     <div id="app">
       <h2>Bitcoin Price
-      <ul v-cloak>
-        <li v-for="(rate, currency) in bpi">
-          {{ currency }} : {{ rate.rate_float | currencyDecimal }}
-        </li> 
-      </ul>
+      <section v-if="hasError">
+        Error.
+      </section>
+      <section v-else>
+        <ul v-cloak>
+          <li v-for="(rate, currency) in bpi">
+            {{ currency }} : {{ rate.rate_float | currencyDecimal }}
+          </li> 
+        </ul>
+      </section>
       </h2>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
