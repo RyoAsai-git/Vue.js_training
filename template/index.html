@@ -3,8 +3,8 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div id="app">
-      <p v-once v-cloak>
+    <div id="app" v-cloak>
+      <p v-once>
         {{ message }}
       </p>
       <button v-on:click="clickHandler">
