@@ -1,3 +1,9 @@
+// グローバルフィルタ
+//Vueインスタンス作成前に定義
+Vue.filter('numberFormat', function(value) {
+  return value.toLocaleString()
+})
+
 var app = new Vue ({
   el: '#app',
   data: {
@@ -12,9 +18,10 @@ var app = new Vue ({
       this.message = this.message.split('').reverse().join('')
     }
   },
-  filters: {
-    numberFormat: function(value) {
-      return value.toLocaleString();
-    }
-  }
+  // ローカルフィルタ
+  // filters: {
+  //   numberFormat: function(value) {
+  //     return value.toLocaleString();
+  //   }
+  // }
 })
