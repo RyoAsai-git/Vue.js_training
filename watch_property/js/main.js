@@ -5,6 +5,9 @@ var app = new Vue({
     km: 0,
     m: 0,
     mm: 0,
+    firstName: '',
+    lastName: '',
+    // fullName: '',
   },
   watch: {
     message: function(newValue, oldValue) {
@@ -27,5 +30,18 @@ var app = new Vue({
       this.m = value / 1000
       this.mm = value 
     },
+    //監視プロパティ
+    // firstName: function(value) {
+    //   this.fullName = value + ' ' + this.lastName
+    // },
+    // lastName: function(value) {
+    //   this.fullName = this.firstName + ' ' + value
+    // },
+  },
+  //算出プロパティ
+  computed: {
+    fullName: function() {
+      return this.firstName + ' ' + this.lastName
+    }
   }
 })
