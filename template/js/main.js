@@ -3,6 +3,8 @@ var app = new Vue ({
   data: {
     message: 'Hello Vue.js',
     message2: 'Hello <span style="color:red">Vue.js</span>',
+    number: 100,
+    ok: true,
   },
   methods: {
     clickHandler: function(event) {
