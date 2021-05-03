@@ -37,10 +37,22 @@
       <p>
         <!-- 動作しない 式ではなく文となるため動作しない -->
         <!-- {{ var x = 1 }} -->
-        <!-- 動作しない -->
+        <!-- 動作しない フロー制御は三項演算子を用いる-->
         <!-- {{ if(ok) { return message } }} -->
         {{ ok? message : '' }}
       </p>
+      <h2>
+        Mustache
+      </h2>
+        <p>
+          {{ price | numberFormat }}
+        </p>
+      <h2>
+        v-bind
+      </h2>
+        <p>
+          <input type="text" v-bind:value="price | numberFormat">
+        </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
