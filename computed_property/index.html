@@ -1,0 +1,46 @@
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <p>
+        {{ message.split('').reverse().join('') }}
+      </p>
+      <p>
+        <!-- computedはmessageの値が変わらない限り、以前計算した結果を即時返す -->
+        {{ reversedMessage }}
+      </p>
+      <p>
+        <!-- methodsは呼び出される度に関数の処理を実行する -->
+        {{ reversedMessageMethod() }}
+      </p>
+      <p>
+        base price: <input type="text" v-model="basePrice">
+      </p>
+      <p>
+        tax included price: <input type="text" v-model="taxIncludedPrice">
+      </p>
+      <h2>
+        computed
+        <!-- キャッシュされるため全て同じ値 -->
+      </h2>
+      <ol>
+        <li>{{ computedNumber }}</li>
+        <li>{{ computedNumber }}</li>
+        <li>{{ computedNumber }}</li>
+      </ol>
+      <h2>
+        methods
+        <!-- キャッシュされないため全て異なる値 -->
+      </h2>
+      <ol>
+        <li>{{ methodsNumber() }}</li>
+        <li>{{ methodsNumber() }}</li>
+        <li>{{ methodsNumber() }}</li>
+      </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
