@@ -10,9 +10,12 @@
       <button v-on:click="counter++">
         click
       </button>
-      <button v-on:click="clickHandler">
+      <button v-on:click="clickHandler($event, 'vue.js')">
         click
       </button>
+      <p>
+        {{ message }}
+      </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
