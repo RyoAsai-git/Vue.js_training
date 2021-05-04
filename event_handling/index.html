@@ -34,6 +34,13 @@
       <div v-on:click.shift="clickHandler">
         click me
       </div>
+      <button v-on:click="clickHandler">
+        Click1
+      </button>
+      <!-- v-on省略記法 -->
+      <button @click="clickHandler">
+        Click1
+      </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>

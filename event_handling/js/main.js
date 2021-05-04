@@ -21,7 +21,8 @@ var app = new Vue({
       this.message = ''
     },
     clickHandler: function() {
-      alert('Shift + click ')
+      // alert('Shift + click ')
+      alert('Clicked')
     }
   }
 })
