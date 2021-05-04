@@ -19,5 +19,9 @@ var app = new Vue({
     isLarge: true,
     color: 'blue',
     fontSize: 36,
+    styleObject: {
+      color: 'green',
+      fontSize: '36px',
+    }
   }
 })
