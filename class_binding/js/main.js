@@ -3,5 +3,7 @@ var app = new Vue({
   data: {
     isLarge: true,
     hasError: true,
+    largeClass: 'large',
+    dangerClass: 'text-danger',
   }
 })
