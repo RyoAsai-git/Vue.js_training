@@ -9,6 +9,10 @@
       </p>
       Hello <span v-bind:class="[largeClass, dangerClass]">Vue.js</span>
       Hello <span v-bind:class="classObject">Vue.js</span>
+      <p>
+        Hello <span v-bind:class="[isLarge ? largeClass : '',
+        dangerClass] ">Vue.js</span>
+      </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
