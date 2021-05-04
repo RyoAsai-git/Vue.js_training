@@ -5,5 +5,9 @@ var app = new Vue({
     hasError: true,
     largeClass: 'large',
     dangerClass: 'text-danger',
+    classObject: {
+      large: true,
+      'text-danger' : true
+    }
   }
 })
