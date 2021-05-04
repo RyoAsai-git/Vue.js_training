@@ -14,11 +14,14 @@ var app = new Vue({
     //   console.log($event.target.type)
     // }
 
-    clickHandler: function() {
-      this.message = new Date().toLocaleTimeString()
-    },
+    // clickHandler: function() {
+    //   this.message = new Date().toLocaleTimeString()
+    // },
     clear: function() {
       this.message = ''
+    },
+    clickHandler: function() {
+      alert('Shift + click ')
     }
   }
 })
