@@ -13,8 +13,12 @@ var app = new Vue({
     //   console.log($event.target.innerHTML)
     //   console.log($event.target.type)
     // }
+
     clickHandler: function() {
       this.message = new Date().toLocaleTimeString()
+    },
+    clear: function() {
+      this.message = ''
     }
   }
 })

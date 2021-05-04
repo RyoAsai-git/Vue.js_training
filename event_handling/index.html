@@ -22,6 +22,14 @@
       <p>
         {{ message }}
       </p>
+      <!-- <input type="text" v-on:keyup.27="clear" v-model="message"> -->
+      <!-- keyCode 27でescはわかりにくいのでescで指定することもできる -->
+      <!-- <input type="text" v-on:keyup.esc="clear" v-model="message"> -->
+      <!-- 複数のキーをor条件で指定 esc space up -->
+      <input type="text" v-on:keyup.esc.space.up="clear" v-model="message">
+      <p>
+        {{ message }}
+      </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
