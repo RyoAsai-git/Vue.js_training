@@ -16,6 +16,8 @@ var app = new Vue({
     dangerClass: {
       'text-danger': true,
     },
-    isLarge: true
+    isLarge: true,
+    color: 'blue',
+    fontSize: 36,
   }
 })
