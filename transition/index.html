@@ -1,0 +1,37 @@
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- show="!show"でボタンクリックの度にshowプロパティの値がtrue、falseで切り替わる -->
+      <button v-on:click="show=!show">
+        change
+      </button>
+      <transition>
+        <!-- transitionを設定すると以下のようになる -->
+        <!-- <transition>  
+          <p class="v-enter-active v-enter-to">
+            Hello Transition
+          </p>
+        </transition> -->
+
+        <!-- 非表示される際のtransitionクラス -->
+        <!-- <transition>
+          <p class="v-leave-active v-leave-to">
+            Hello Transition
+          </p>
+        </transition> -->
+
+          <!-- showプロパティがtrueになった際にtransitionクラスが適用される -->
+        <p v-show="show">
+        <!-- v-ifでも実装可能 -->
+        <!-- <p v-if="show"> -->
+          Hello Transition
+        </p>
+      </transition>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
