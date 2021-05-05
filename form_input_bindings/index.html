@@ -27,6 +27,16 @@
       <p>
         {{ colors }}
       </p>
+
+      <input type="radio" id="red" value="Red" v-model="color">
+      <label for="Red">Red</label>
+      <input type="radio" id="green" value="Green" v-model="color">
+      <label for="Green">Green</label>
+      <input type="radio" id="blue" value="Blue" v-model="color">
+      <label for="Blue">Blue</label>
+      <p>
+        {{ color }}
+      </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
