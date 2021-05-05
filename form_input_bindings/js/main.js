@@ -7,5 +7,6 @@ var app = new Vue ({
     color: '',
     // selected: '',
     selected: [],
+    age: 0,
   }
 })
