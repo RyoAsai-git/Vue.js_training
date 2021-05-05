@@ -37,6 +37,16 @@
       <p>
         {{ color }}
       </p>
+
+      <select v-model="selected">
+        <option disable value="">Please select one</option>
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+      </select>
+      <p>
+        {{ selected }}
+      </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
