@@ -10,6 +10,12 @@
       <local-component></local-component>
       <local-component></local-component>
       <local-component></local-component>
+
+      <!-- それぞれ独自の数値を保持 理由:コンポーネント作成時に新しいインスタンスが作成される -->
+      <!-- new Vueと同じ -->
+      <button-counter></button-counter>
+      <button-counter></button-counter>
+      <button-counter></button-counter>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="js/main.js"></script>
